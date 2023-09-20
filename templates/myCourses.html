@@ -1,0 +1,56 @@
+{% extends 'instructor.html' %}
+{% load static %}
+
+{% block style %}
+
+{% endblock %}
+{% block dashboardBody %}
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="{% static 'dashboard/css/manage.css' %}" rel="stylesheet" />
+<div class="container mt-3">
+    {% if messages %}
+        {% for message in messages %}
+        <br> 
+        <div class="alert mymsg alert-{{ message.tags }} alert-dismissible fade show mx-0" role="alert">
+            <strong> {{ message }} </strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+    {% endif %}
+
+   <h1> Welcome </h1>
+   <div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        Course Assigned For You 
+    </div>
+    <div class="card-body">
+        <table id="datatablesSimple">                    
+            <thead>
+                <tr>
+                    <th>Study Center</th>
+                    <th>Assign Course</th>                                                     
+                    <th>Term</th>                                                     
+                    <th>Year</th>                               
+                </tr>
+            </thead>
+            
+            <tbody>
+                {% for i in assignCourse %}    
+                <tr>
+                    <td> {{ i.study_center }} </td>
+                    <td> {{ i.assign_course }}  </td>                                 
+                    <td> {{ i.term }}  </td>                                 
+                    <td> {{ i.year }}  </td>  
+                </tr>         
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

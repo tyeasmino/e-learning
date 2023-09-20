@@ -1,0 +1,65 @@
+{% extends 'learner.html' %}
+{% load static %}
+
+{% block head %} 
+<link rel="stylesheet" href="{% static 'css/note.css' %}">  
+{% endblock%}
+
+{% block dashboardBody %} 
+<div class="container">
+    
+    <div class="row">
+        <div class="row">
+            <form action="" method="POST" class="ui form" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{form}} 
+                <button type="submit" class="ui button primary">Confirm</button>
+            </form>
+        </div>
+        <div class="col-md-4 col-sm-6 content-card">
+            <div class="card-big-shadow">
+                <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                    <div class="content">
+                        <h6 class="category">Forget Password DONE  </h6> 
+                        <h4 class="title"><a href="#">Forget Password Done</a></h4>
+                    </div>
+                </div> <!-- end card -->
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 content-card">
+            <div class="card-big-shadow">
+                <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                    <div class="content">
+                        <h6 class="category">Change Password  done </h6> 
+                        <h5 class="title"><a href="#">Change Password</a></h5>
+                    </div>
+                </div> <!-- end card -->
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 content-card">
+            <div class="card-big-shadow">
+                <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                    <div class="content">
+                        <h6 class="category">Active Account  done </h6> 
+                        <h4 class="title"><a href="#">Active Account</a></h4>
+                    </div>
+                </div> <!-- end card -->
+            </div>
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-6 content-card">
+            <div class="card-big-shadow">
+                <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
+                    <div class="content">                        
+                        <h5 class="title"><a href="https://www.youtube.com/watch?v=DatZY6CQrt8&ab_channel=TechSolutionsInBangla">Dependent Dropdown</a></h5>
+                    </div>
+                </div> <!-- end card -->
+            </div>
+        </div>
+        
+    </div>
+    </div>
+{% endblock %}

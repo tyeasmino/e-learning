@@ -1,0 +1,1 @@
+web: gunicorn learndShare.wsgi --log-file -

@@ -1,0 +1,25 @@
+Assignment 3
+submit: 18-03-22
+01. Concept of e-commerce, difference of traditional and e-commerce - 5 mint
+03. Business model - 10 mint
+06. value chain - 10 mint
+07. OSI model - TCP IP
+09. TCP UDP FTP SMTP
+
+submit: 25-03-22
+10. HTML URL HTTP HTTPS FORM
+11. Strategies for marketing 
+14. Sales & Promotion 
+15. Strategies for purchasing & support activities 
+20. electronic payment system - defination & advantages 
+21. prepaid postpaid & smart card of payment system 
+28. set protocol & risk of e-commerce system
+
+submit: 01.04.22 
+30. EDI - Electronic Data Interchange  
+36. EDI all without what is EDI 
+38. WAP XML 
+44. Cyber law introduction 
+48. Security of clients and server 
+56. Computer security clasification & e-commerce threads 
+58. Copy-write & interlectual property 
